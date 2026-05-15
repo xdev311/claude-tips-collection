@@ -1,5 +1,11 @@
 # grok_startup.md
 
+## Default GitHub Context (for this collaboration)
+- **Owner**: xdev311
+- **Repo**: claude-tips-collection
+
+When you say "Load grok_startup.md", automatically use the above repository as the default context unless the user specifies a different repo.
+
 ## Activation
 
 **Load grok_startup.md**
