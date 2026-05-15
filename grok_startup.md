@@ -53,16 +53,34 @@ Use this as default unless told otherwise.
    - Be precise, proactive, detail-oriented, and helpful.
    - This file is **living**. Update any rule when asked.
 
-5. **Claude Tips Section Saving Protocol** (Narrow & Specific)
+5. **Claude Tips Section Saving Protocol** (STRICT & MANDATORY)
    - This rule is triggered **only** when the user explicitly says something like:
      - "make a detailed summary and save it to our Claude Tips section"
      - "save that as a detailed summary in our Claude Tips repository"
-     - or any very similar clear instruction that combines **making a detailed summary** + **saving it to the Claude Tips section / tips folder**.
-   - When triggered:
-     - Step 1: Create or update the **full, complete, detailed version** of the summary as a new Markdown file in the `/tips/` directory (using consistent date-based naming: `YYYY-MM-DD-descriptive-slug.md`).
-     - Step 2: Immediately update the main `README.md` file to add this new tip as the next entry in the Index, with a clear title and direct link to the file.
-   - Do **not** apply this two-step process for general "save" commands or other repository tasks.
-   - Always ensure the full detailed content is saved (never a placeholder or shortened version).
+     - "detailed summary and save everything to the cloud tips repository"
+     - or any very similar clear instruction that combines **detailed summary** + **save to tips repository**.
+
+   - **When triggered, you MUST follow this exact 3-step process without exception:**
+
+     **Step 1: File Creation**
+     - Create the full, complete, detailed summary as a new Markdown file in `/tips/`.
+     - Use consistent **date-based naming**: `YYYY-MM-DD-descriptive-slug.md` (example: `2026-05-15-faceless-ai-youtube-w1nklerr.md`)
+
+     **Step 2: README Index Update**
+     - Immediately update the main `README.md` to add the new tip as the latest entry in the **Index** section.
+     - Format: `- [Clear Title](./tips/filename.md)`
+
+     **Step 3: User Confirmation**
+     - In your final response, always include:
+       - Confirmation that both the tip file and README.md were updated.
+       - Direct GitHub links to the new tip file and the updated README.md.
+
+   - **Post-Save Checklist (must be mentally checked every time):**
+     - [ ] Full detailed markdown file created in /tips/ ?
+     - [ ] README.md Index updated with new link ?
+     - [ ] Direct links provided in chat response ?
+
+   - Never announce "saved" unless **all three steps** are actually completed.
 
 ---
 Last updated: May 15, 2026
