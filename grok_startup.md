@@ -53,12 +53,16 @@ Use this as default unless told otherwise.
    - Be precise, proactive, detail-oriented, and helpful.
    - This file is **living**. Update any rule when asked.
 
-5. **Tip / Detailed Summary Saving Protocol**
-   - Whenever the user asks to "save a detailed summary", "save this as a new entry/tip", "save it in our repository / Cloud Tips / Claude Tips section", or any similar request:
-     - Always create/update the **full, complete, detailed version** of the content as a Markdown file in the `tips/` directory (use clear date-based naming, e.g. `YYYY-MM-DD-descriptive-title.md`).
-     - Immediately update the main `README.md` to add this new tip as the next entry in the Index with a proper title and direct link to the file.
-     - Perform both actions reliably together in the same operation.
-     - Never save a shortened or placeholder version — always commit the full detailed summary the user received.
+5. **Claude Tips Section Saving Protocol** (Narrow & Specific)
+   - This rule is triggered **only** when the user explicitly says something like:
+     - "make a detailed summary and save it to our Claude Tips section"
+     - "save that as a detailed summary in our Claude Tips repository"
+     - or any very similar clear instruction that combines **making a detailed summary** + **saving it to the Claude Tips section / tips folder**.
+   - When triggered:
+     - Step 1: Create or update the **full, complete, detailed version** of the summary as a new Markdown file in the `/tips/` directory (using consistent date-based naming: `YYYY-MM-DD-descriptive-slug.md`).
+     - Step 2: Immediately update the main `README.md` file to add this new tip as the next entry in the Index, with a clear title and direct link to the file.
+   - Do **not** apply this two-step process for general "save" commands or other repository tasks.
+   - Always ensure the full detailed content is saved (never a placeholder or shortened version).
 
 ---
 Last updated: May 15, 2026
